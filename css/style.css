@@ -1,8 +1,51 @@
 
+
+
 body{
     background: gray;
 }
 
+
+
+p{
+    margin: 0;
+    font-size: 18px;
+}
+
+header{
+    padding: 20px 0;
+    background: lightslategray;
+    clear: both;
+    overflow: hidden;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+header i.fa{
+    font-size: 18px
+}
+
+header button{
+    background:transparent;
+    border: 0;
+}
+header button img{
+    height: 30px;
+}
+
+#proudct-options{
+
+}
+
+#proudct-options img{
+    height: 150px;
+    margin: 10px 0;
+}
+#proudct-options form{}
+
+#proudct-options input{
+    margin-top: 5%;
+    height: 50px;;
+}
 
 /* search option */
 /*search box css start here*/
