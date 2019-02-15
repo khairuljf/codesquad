@@ -23,68 +23,219 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-    line-height: 1;
-    backgroun:red;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
 body{
-    background: gray;
-    font-family: 'GLYPHICONS Halflings';
+    
+}
+
+a:hover{
+    text-decoration: none;
 }
 
 
-/* search option */
-/*search box css start here*/
-.search-sec{
-    padding: 2rem;
+.topbar{
+    background: #F0F1F1;
+    border-bottom: 2px solid #4D4A4B;
+    padding: 20px 0;
+    color: #000;
+    font-size: 20px;
 }
-.search-slt{
+.topbar i,.topbar a{
+    color: #000;
+}
+.product-search{
+     padding: 60px 0 0 10%;
+}
+
+.product-search input.form-control{
+    height: 60px;
+    width: 40%;
+    float: left;
+   
+}
+
+.product-search input::placeholder{
+    font-size: 20px;
+}
+.product-search input, .product-search select, .product-search button{
+    border-radius: 0;
+}
+.product-search select{
+  height: 60px;
+    width: 40%;  
+    float: left;
+    font-size:25px;
+}
+
+.product-search button{
+     width: 10%;  
+     height: 60px;
+     background: #27A9E1;
+}
+
+.jumbotron{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.team .full {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.team .image {
+  display: block;
+  width: 100%;
+  height: auto;
+
+}
+.team img{
+      -webkit-box-shadow: 5px 6px 10px 1px rgba(0,0,0,0.32);
+-moz-box-shadow: 5px 6px 10px 1px rgba(0,0,0,0.32);
+box-shadow: 5px 6px 10px 1px rgba(0,0,0,0.32);
+}
+
+.team img:hover{
+     transition :all .5s;
+}
+
+
+.team .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.team .full:hover .overlay {
+  opacity: .9;  
+
+}
+
+.team .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text div{
+    display: inline-flex;
+    width: 100%;
+}
+.text div strong{
+    font-size: 25px;
+}
+
+/*.row.user-row{
+    margin-bottom: 15px;
+}*/
+
+.row.user-row .col-md-4{
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+    margin-bottom: 15px;
+}
+
+section#subscriber{
+    background: #F2F3F4;
+    padding: 70px;
+    -webkit-box-shadow: 0px 13px 23px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 13px 23px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 13px 23px 0px rgba(0,0,0,0.75);
+}
+
+.subscribe-content img{
+        float: left;
+    padding-right: 20px;
+}
+.subscribe-content strong{
     display: block;
-    width: 100%;
-    font-size: 0.875rem;
-    line-height: 1.5;
-    color: #55595c;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #ccc;
-    height: calc(3rem + 2px) !important;
-    border-radius:0;
-}
-.wrn-btn{
-    width: 100%;
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: capitalize;
-    height: calc(3rem + 2px) !important;
-    border-radius:0;
-}
-@media (min-width: 992px){
-    .search-sec{
-        position: relative;
-        top: -114px;
-        background: rgba(26, 70, 104, 0.51);
-    }
+    font-weight: 700;
 }
 
-@media (max-width: 992px){
-    .search-sec{
-        background: #1A4668;
-    }
+.subscribe-content p{
+        font-size: 25px;
+}
+.subscribe-form input{
+    width: 70%;
+    height: 50px;
+    float: left;
+    border-radius: 0;
+}
+
+.subscribe-form input::placeholder {
+  font-size: 20px;
+  margin-top: 10px;
+  position: center center
+}
+.subscribe-form button{
+    float: left;
+    height: 50px;
+    width: 25%;
+    border-radius: 0;
+    font-size: 25px;
+    background:#27A8E0;
+    border:0;
+}
+
+.btn-success:hover{background: #000}
+
+#fservice{
+    padding: 70px;
+    background: #fff;
+    font-size: 18px;
+    color: #000
+}
+#fservice a{
+    display: block;
+    line-height: 25px;
+    color: #000
+}
+#fservice p{
+    line-height: 25px;
+}
+
+#fservice h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+#fservice h5{
+       font-size: 25px;
+    font-weight: bold;
+}
+footer{
+    background: #F3F4F5;
+    padding: 20px 0;
+        font-size: 20px;
+}
+footer p{
+        padding: 20px 0 0 0;
+}
+footer ul li img{
+    height: 50px;
+}
+
+#fsocial{
+    margin-top: 20px;
+}
+
+#fsocial li a{
+    width: 35px;
+    height: 35px;
+    background: #D1D2D4;
+    padding: 6px 11px;
+    border-radius: 50%;
 }
